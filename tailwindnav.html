@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width , initial-scale=1.0"> 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link href="./output.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
+        extend: {
+            fontFamily:{
+                strongtext:MerriWeather
+            },
+            
+          colors: {
+            myred: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <nav class="bg-slate-900 px-4 lg:px-24 sm:onwards h-20 flex justify-between items-center ">     
+        <div class="text-white flex items-center gap-2 w-5 h-10">
+            <img class="w-50 px" src="./tailwindprjct.png" alt="">
+            <span class="flex w-10 h-6 font-semibold">
+                    tailwindcss
+            </span>
+        </div>
+        <div class="text-white h-20 flex gap-6 items-center">
+            <ul class="hidden lg:flex gap-6 border-r px-4 "> 
+                <li class="font-strongtext hover:text-blue-400">Docs</li>
+                <li class="hover:text-blue-400">Components</li>
+                <li class="hover:text-blue-400">Blog</li>
+                <li class="hover:text-blue-400">Showcase</li>
+            </ul>
+            <div class="flex gap-6 lg:hidden ">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="hidden lg:flex h-20 gap-4 items-center">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                  </svg>
+                  <i class="fa-brands fa-github w-20"></i>
+            </div>
+
+        </div>
+    </nav>
+</body>
+</html>
